@@ -1,0 +1,80 @@
+// GFG Minimum Difference among K
+// INPUT: 
+// 20 13
+// 44 43 32 42 38 27 29 44 37 26 0 2 13 4 7 43 20 33 23 25
+// OUTPUT: 
+// 19 
+// { Driver Code Starts
+#include <bits/stdc++.h>
+#include<stdio.h>
+#include<math.h>
+using namespace std; 
+
+ // } Driver Code Ends
+class Solution{
+  public:
+    int minDiff(int arr[], int N, int K)
+    {
+        isort(arr,N);
+        int unfairness = arr[K-1]-arr[0];
+        for(int i=1;i<N;i++)
+        {
+            int l = arr[i];
+            int t = K;
+            t--;
+            while(t!=1){
+                if(i<N)
+                    i++;
+                else
+                    return unfairness;
+            }
+            int r = arr[i];
+            if(r-l<unfairness)
+                unfairness = r-l;
+        }
+        return unfairness;
+    }
+    void isort(int a[], int n)
+    {
+        for(int i=1;i<n;i++)
+        {
+            int key = a[i];
+            int j=i-1;
+            while(a[j]>key && j>=0)
+            {
+                a[j+1] = a[j];
+                j--;
+            }
+            a[j+1] = key;
+        }
+        printArr(a,n);
+    }
+    void printArr(int a[], int n){
+        for(int i=0;i<n;i++)
+        {
+            cout<<a[i]<<" ";
+        }
+        cout<<endl; 
+    }
+};
+
+// { Driver Code Starts.
+
+int main()
+{
+	//freopen("input.txt","r",stdin);
+	//freopen("output.txt","w",stdout);
+	int t;
+	cin>>t;
+	while(t--)
+	{
+		int n,k;
+		cin>>n>>k;
+		int a[n];
+		for(int i=0;i<n;++i)
+			cin>>a[i];
+		Solution obj;
+		cout<<obj.minDiff(a,n,k)<<endl;
+	}
+	return 0;
+}  // } Driver Code Ends

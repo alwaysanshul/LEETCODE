@@ -1,0 +1,46 @@
+ListNode* mergeKLists(vector<ListNode*>& lists) {                   
+        struct ListNode* ans = new ListNode();
+        struct ListNode* r = ans;                                       
+        int size = lists.size();
+        bool flag=true;
+        
+        while(flag){
+            int c=0,min;
+            
+            if(lists[c]==NULL){
+                while(lists[c]==NULL && c!=size-1)
+                       c++;
+                if(lists[c]!=NULL)
+                    min = lists[c]->val;
+                
+                else{
+                    flag = false;
+                    continue; 
+                }
+            }
+            
+            else{
+                min = lists[c]->val; 
+            }
+            c=0;
+
+            int i=0;
+            for(auto it=lists.begin();it!=lists.end();it++){
+                if(*it!=NULL && (*it)->val<min){
+                    min = (*it)->val;
+                    c=i;
+                }
+                i++;
+            }
+            
+            if(lists[c]!=NULL && lists[c]->next!=NULL)
+                lists[c]=lists[c]->next;
+            else 
+                lists[c]=NULL;
+            
+            r->next = new ListNode(min);
+            r = r->next;
+        }
+                                                     
+        return ans->next;
+    }

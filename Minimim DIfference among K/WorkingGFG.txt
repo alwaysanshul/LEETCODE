@@ -1,0 +1,84 @@
+// { Driver Code Starts
+#include <bits/stdc++.h>
+#include<stdio.h>
+#include<math.h>
+using namespace std; 
+
+ // } Driver Code Ends
+class Solution{
+  public:
+    int minDiff(int arr[], int N, int K)
+    {
+        mergeSort(arr,0,N-1);
+        
+        int unfairness = INT_MAX;
+        
+        for(int i=0;i<=N-K;i++)
+        {
+            unfairness = min(unfairness, arr[i+K-1]-arr[i]);
+        }
+        
+        return unfairness;
+    }
+   
+    // Main Algorithm
+void mergeSort(int a[], int low, int high){ 
+    if(low<high){
+        int mid = (low+high)/2; 
+        mergeSort(a,low,mid);   
+        mergeSort(a,mid+1,high);
+        merge(a,low,mid,high); 
+    }
+}
+
+// Merger Function  
+void merge(int a[], int low, int mid, int high){ 
+    int c[high];    
+    int i = low;
+    int j = mid+1; 
+    int k = low;   // k = 0; 
+    while(i<=mid && j<=high){
+        if(a[i]<a[j]){ 
+            c[k] = a[i];
+            k++;i++;     
+        }
+        else{
+            c[k] = a[j]; 
+            k++;j++;
+        }
+    }
+    while(i<=mid){
+        c[k] = a[i];
+        k++;i++;
+    }
+    while(j<=high){
+        c[k] = a[j];
+        k++;j++; 
+    }
+    for(k=low;k<=high;k++)   // for(k=0;k<=high;k++)
+        a[k]=c[k];   
+}
+
+
+};
+
+// { Driver Code Starts.
+
+int main()
+{
+	//freopen("input.txt","r",stdin);
+	//freopen("output.txt","w",stdout);
+	int t;
+	cin>>t;
+	while(t--)
+	{
+		int n,k;
+		cin>>n>>k;
+		int a[n];
+		for(int i=0;i<n;++i)
+			cin>>a[i];
+		Solution obj;
+		cout<<obj.minDiff(a,n,k)<<endl;
+	}
+	return 0;
+}  // } Driver Code Ends
