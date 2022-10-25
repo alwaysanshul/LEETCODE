@@ -1,10 +1,11 @@
+#include<bits/stdc++.h> 
 class Solution {
 public:
     void rotate(vector<int>& nums, int k) {
         int n = nums.size();
         if(k>n)
             k = k%n;
-        vector<int> ans(n,0);
+        vector<int> ans(n,0); 
         int index = n-k;
         int j=0;
         for(int i=index;i<n;i++)
@@ -15,7 +16,7 @@ public:
         return;
     }
     
-    // Time Limit Exceeded - Recursive Method
+    // Time Limit Exceeded - Recursive Method !!
     void rotate_TLE(vector<int>& nums, int& k) {
         int n = nums.size()-1; 
         if(k == 0)
@@ -34,6 +35,6 @@ public:
         nums[0] = temp;
         
         k = k-1;
-        rotate(nums,k);
+        rotate_TLE(nums,k);
     }
 };
