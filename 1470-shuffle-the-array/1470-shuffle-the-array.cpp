@@ -6,14 +6,10 @@ public:
         int j = 0;
         int k = j+n;
         while(k!=(n*2)) {
-            if(flag) {
+            if(flag) 
                 ans.push_back(nums[j++]);
-                cout<<j<<endl;
-            }
-            else {
+            else 
                 ans.push_back(nums[k++]);
-                cout<<k<<endl;
-            }
             flag = !flag;
         }
         return ans;
