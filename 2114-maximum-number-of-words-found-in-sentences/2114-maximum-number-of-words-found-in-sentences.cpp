@@ -9,8 +9,7 @@ public:
                 if(sentences[i].at(j)==' ')
                     words++;
             }
-            if(words!=0)
-                ans = max(ans,words);
+            ans = max(ans,words);
         }
         return ans;
     }
