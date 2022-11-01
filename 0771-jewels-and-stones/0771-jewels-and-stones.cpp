@@ -5,9 +5,11 @@ public:
     int numJewelsInStones(string jewels, string stones) {
         int count = 0;
         for(int i=0;i<stones.length();i++) {
-            if(jewels.find(stones.at(i))!=-1)
+            size_t found = jewels.find(stones.at(i));
+            if(found!=string::npos)
                 count++;
         }
+        cout<<" the highest possible value for an element of type size_t: string::npos="<<string::npos;
         return count;
     }
 };
