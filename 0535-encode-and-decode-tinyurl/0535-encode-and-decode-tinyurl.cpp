@@ -4,6 +4,7 @@ public:
     // Encodes a URL to a shortened URL.
     string encode(string longUrl) {
         str = longUrl;
+        // Please don't judge my encoding algo, im just a beginner :(
         for(int i=0;i<str.length();i++) {
             str.at(i) = str.at(i) + 1;
         }
