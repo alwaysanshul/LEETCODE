@@ -1,6 +1,32 @@
 class Solution {
 public:
     vector<int> minOperations(string boxes) {
+        int leftcount=0;
+        int leftsum=0;
+        int rightcount=0;
+        int rightsum=0;
+        vector<int> ans;
+        for(int i=0;i<boxes.size();i++) {
+            if(boxes.at(i)=='1'){
+                rightsum += i;
+                rightcount++;
+            }
+        }
+        for(int i=0;i<boxes.size();i++) {
+            if(boxes.at(i)=='1'){
+                rightsum -= i;
+                rightcount--;
+            }
+            int sum = abs(rightsum-(rightcount*i)) + abs(leftsum-(leftcount*i));
+            ans.push_back(sum);
+            if(boxes.at(i)=='1'){
+                leftsum += i;
+                leftcount++;
+            }
+        }
+        return ans;
+    }
+    vector<int> brute_minOperations(string boxes) {
         vector<int> ans;
         for(int i=0;i<boxes.size();i++) {
             int count=0;
