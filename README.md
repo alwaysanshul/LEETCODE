@@ -6,6 +6,7 @@
 ## Array
 |  |
 | ------- |
+| [0001-two-sum](https://github.com/alwaysanshul/LEETCODE/tree/master/0001-two-sum) |
 | [0108-convert-sorted-array-to-binary-search-tree](https://github.com/alwaysanshul/LEETCODE/tree/master/0108-convert-sorted-array-to-binary-search-tree) |
 | [0136-single-number](https://github.com/alwaysanshul/LEETCODE/tree/master/0136-single-number) |
 ## Divide and Conquer
@@ -28,4 +29,8 @@
 |  |
 | ------- |
 | [0136-single-number](https://github.com/alwaysanshul/LEETCODE/tree/master/0136-single-number) |
+## Hash Table
+|  |
+| ------- |
+| [0001-two-sum](https://github.com/alwaysanshul/LEETCODE/tree/master/0001-two-sum) |
 <!---LeetCode Topics End-->
