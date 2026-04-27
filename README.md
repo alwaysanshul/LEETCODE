@@ -9,6 +9,7 @@
 | [0001-two-sum](https://github.com/alwaysanshul/LEETCODE/tree/master/0001-two-sum) |
 | [0108-convert-sorted-array-to-binary-search-tree](https://github.com/alwaysanshul/LEETCODE/tree/master/0108-convert-sorted-array-to-binary-search-tree) |
 | [0136-single-number](https://github.com/alwaysanshul/LEETCODE/tree/master/0136-single-number) |
+| [1391-check-if-there-is-a-valid-path-in-a-grid](https://github.com/alwaysanshul/LEETCODE/tree/master/1391-check-if-there-is-a-valid-path-in-a-grid) |
 ## Divide and Conquer
 |  |
 | ------- |
@@ -33,4 +34,20 @@
 |  |
 | ------- |
 | [0001-two-sum](https://github.com/alwaysanshul/LEETCODE/tree/master/0001-two-sum) |
+## Depth-First Search
+|  |
+| ------- |
+| [1391-check-if-there-is-a-valid-path-in-a-grid](https://github.com/alwaysanshul/LEETCODE/tree/master/1391-check-if-there-is-a-valid-path-in-a-grid) |
+## Breadth-First Search
+|  |
+| ------- |
+| [1391-check-if-there-is-a-valid-path-in-a-grid](https://github.com/alwaysanshul/LEETCODE/tree/master/1391-check-if-there-is-a-valid-path-in-a-grid) |
+## Union-Find
+|  |
+| ------- |
+| [1391-check-if-there-is-a-valid-path-in-a-grid](https://github.com/alwaysanshul/LEETCODE/tree/master/1391-check-if-there-is-a-valid-path-in-a-grid) |
+## Matrix
+|  |
+| ------- |
+| [1391-check-if-there-is-a-valid-path-in-a-grid](https://github.com/alwaysanshul/LEETCODE/tree/master/1391-check-if-there-is-a-valid-path-in-a-grid) |
 <!---LeetCode Topics End-->
