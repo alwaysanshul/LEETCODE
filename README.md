@@ -10,6 +10,7 @@
 | [0108-convert-sorted-array-to-binary-search-tree](https://github.com/alwaysanshul/LEETCODE/tree/master/0108-convert-sorted-array-to-binary-search-tree) |
 | [0136-single-number](https://github.com/alwaysanshul/LEETCODE/tree/master/0136-single-number) |
 | [1391-check-if-there-is-a-valid-path-in-a-grid](https://github.com/alwaysanshul/LEETCODE/tree/master/1391-check-if-there-is-a-valid-path-in-a-grid) |
+| [2033-minimum-operations-to-make-a-uni-value-grid](https://github.com/alwaysanshul/LEETCODE/tree/master/2033-minimum-operations-to-make-a-uni-value-grid) |
 ## Divide and Conquer
 |  |
 | ------- |
@@ -50,4 +51,13 @@
 |  |
 | ------- |
 | [1391-check-if-there-is-a-valid-path-in-a-grid](https://github.com/alwaysanshul/LEETCODE/tree/master/1391-check-if-there-is-a-valid-path-in-a-grid) |
+| [2033-minimum-operations-to-make-a-uni-value-grid](https://github.com/alwaysanshul/LEETCODE/tree/master/2033-minimum-operations-to-make-a-uni-value-grid) |
+## Math
+|  |
+| ------- |
+| [2033-minimum-operations-to-make-a-uni-value-grid](https://github.com/alwaysanshul/LEETCODE/tree/master/2033-minimum-operations-to-make-a-uni-value-grid) |
+## Sorting
+|  |
+| ------- |
+| [2033-minimum-operations-to-make-a-uni-value-grid](https://github.com/alwaysanshul/LEETCODE/tree/master/2033-minimum-operations-to-make-a-uni-value-grid) |
 <!---LeetCode Topics End-->
