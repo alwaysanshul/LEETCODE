@@ -1,8 +1,3 @@
-/**
- * @param {number[][]} grid
- * @return {number}
- */
-
 let prefix = []   // prefix sums
 let grid = []     // input grid
 let n = 0         // size n
@@ -16,8 +11,8 @@ var maximumScore = function(grid_) {
         new Array(n + 1).fill(0)
     );
 
-    for(let j=0;j<n;j++) {  // column loop
-        for(let i=1;i<=n;i++) {  // row loop
+    for(let j=0;j<n;j++) {  // column 
+        for(let i=1;i<=n;i++) {  // row 
             prefix[i][j+1] = prefix[i-1][j+1] + grid[i-1][j];
         }
     }
@@ -27,10 +22,10 @@ var maximumScore = function(grid_) {
             new Array(n + 1).fill(-1) 
         )
     )   
-    return helper(0,0,1) // recursion
+    return func(0,0,1) // recursion
 };
 
-var helper = function(prevTrue, prevLen, col) {
+var func = function(prevTrue, prevLen, col) {
         
     if(col==n+1)  // base case
         return 0;
@@ -49,10 +44,10 @@ var helper = function(prevTrue, prevLen, col) {
         if(prevLen > len) 
             currAns  = prefix[prevLen][col] - prefix[len][col];
         
-        let res1 = currAns + prevAns + helper(1, len, col+1)
-        let res2 = prevAns + helper(0, len, col+1)
+        let res1 = currAns + prevAns + func(1, len, col+1)
+        let res2 = prevAns + func(0, len, col+1)
 
-        res = Math.max(res, Math.max(res1,res2));
+        res = Math.max(res,res1,res2);
     }
     return dp[prevTrue][prevLen][col] = res;
 }
