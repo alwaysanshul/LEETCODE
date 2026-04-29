@@ -11,6 +11,7 @@
 | [0136-single-number](https://github.com/alwaysanshul/LEETCODE/tree/master/0136-single-number) |
 | [1391-check-if-there-is-a-valid-path-in-a-grid](https://github.com/alwaysanshul/LEETCODE/tree/master/1391-check-if-there-is-a-valid-path-in-a-grid) |
 | [2033-minimum-operations-to-make-a-uni-value-grid](https://github.com/alwaysanshul/LEETCODE/tree/master/2033-minimum-operations-to-make-a-uni-value-grid) |
+| [3225-maximum-score-from-grid-operations](https://github.com/alwaysanshul/LEETCODE/tree/master/3225-maximum-score-from-grid-operations) |
 ## Divide and Conquer
 |  |
 | ------- |
@@ -52,6 +53,7 @@
 | ------- |
 | [1391-check-if-there-is-a-valid-path-in-a-grid](https://github.com/alwaysanshul/LEETCODE/tree/master/1391-check-if-there-is-a-valid-path-in-a-grid) |
 | [2033-minimum-operations-to-make-a-uni-value-grid](https://github.com/alwaysanshul/LEETCODE/tree/master/2033-minimum-operations-to-make-a-uni-value-grid) |
+| [3225-maximum-score-from-grid-operations](https://github.com/alwaysanshul/LEETCODE/tree/master/3225-maximum-score-from-grid-operations) |
 ## Math
 |  |
 | ------- |
@@ -60,4 +62,12 @@
 |  |
 | ------- |
 | [2033-minimum-operations-to-make-a-uni-value-grid](https://github.com/alwaysanshul/LEETCODE/tree/master/2033-minimum-operations-to-make-a-uni-value-grid) |
+## Dynamic Programming
+|  |
+| ------- |
+| [3225-maximum-score-from-grid-operations](https://github.com/alwaysanshul/LEETCODE/tree/master/3225-maximum-score-from-grid-operations) |
+## Prefix Sum
+|  |
+| ------- |
+| [3225-maximum-score-from-grid-operations](https://github.com/alwaysanshul/LEETCODE/tree/master/3225-maximum-score-from-grid-operations) |
 <!---LeetCode Topics End-->
