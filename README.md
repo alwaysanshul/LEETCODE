@@ -70,4 +70,8 @@
 |  |
 | ------- |
 | [3225-maximum-score-from-grid-operations](https://github.com/alwaysanshul/LEETCODE/tree/master/3225-maximum-score-from-grid-operations) |
+## Database
+|  |
+| ------- |
+| [0175-combine-two-tables](https://github.com/alwaysanshul/LEETCODE/tree/master/0175-combine-two-tables) |
 <!---LeetCode Topics End-->
