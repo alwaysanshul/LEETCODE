@@ -38,36 +38,36 @@ function memoize(fn) {
  * console.log(callCount) // 1 
  */
 
-//  function memoize_other_way(fn) {
-//     let callCount = 0
-//     cache = []
+ function memoize_other_way(fn) {
+    let callCount = 0
+    cache = []
     
-//     const memoized = function(...args) {
-//         for(let i=0;i<cache.length;i++) {
-//             let entry = cache[i]
-//             if( isSameArgs(entry.args, args)){
-//                 return entry.result
-//             }
-//         }
-//         callCount++
-//         let res = fn(...args)
-//         cache.push({args:[...args],result:res})
-//         return res        
-//     }   
+    const memoized = function(...args) {
+        for(let i=0;i<cache.length;i++) {
+            let entry = cache[i]
+            if( isSameArgs(entry.args, args)){
+                return entry.result
+            }
+        }
+        callCount++
+        let res = fn(...args)
+        cache.push({args:[...args],result:res})
+        return res        
+    }   
 
-//     memoized.getCallCount = function() {
-//         return callCount
-//     }
+    memoized.getCallCount = function() {
+        return callCount
+    }
 
-//     return memoized
-// }
+    return memoized
+}
 
-// function isSameArgs(arg1, arg2){
-//     if(arg1.length !== arg2.length)
-//         return false
-//     for( let i=0;i<arg1.length;i++){
-//         if(arg1[i]!==arg2[i])
-//             return false
+function isSameArgs(arg1, arg2){
+    if(arg1.length !== arg2.length)
+        return false
+    for( let i=0;i<arg1.length;i++){
+        if(arg1[i]!==arg2[i])
+            return false
 //     }
 //     return true
 // }
