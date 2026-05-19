@@ -1,13 +1,11 @@
 # Write your MySQL query statement below
-SELECT 
-    DATE_FORMAT(activity_date,'%Y-%m-%d') as day,
-    COUNT( DISTINCT user_id) as active_users
-FROM
-    Activity
-WHERE 
-    activity_date >= '2019-06-28' 
-    AND
-    activity_date <= '2019-07-27'
-GROUP BY
-    activity_date
+select 
+    activity_date as day,
+    COUNT(distinct user_id) as active_users 
+from
+    Activity 
+where 
+    activity_date > '2019-06-27' and activity_date <= '2019-07-27' and activity_type in  ('open_session', 'end_session', 'scroll_down', 'send_message')
 
+group by 
+    activity_date
