@@ -5,26 +5,23 @@
  */
 var timeLimit = function(fn, t) {
     
-    async function timeLimited(...args) {
-        const promise1 = new Promise((resolve, reject) => {
-            const timeId = setTimeout( () => {
-                reject("Time Limit Exceeded")
-            }, t)
-            fn(...args)
-                .then((result) => {
-                    clearTimeout(timeId)
-                    resolve(result)
-                })
-                    .catch((err) => {
-                        clearTimeout(timeId)
-                        reject(err)                       
-                    })
+    return async function(...args) {
+        return new Promise(async (res,rej)=>{
+            const timeId = setTimeout(()=>{
+                rej("Time Limit Exceeded")
+            },t)
+            
+            try{
+                let result = await fn(...args)
+                clearTimeout(timeId)
+                res(result)          
+            }
+            catch(err){
+                clearTimeout(timeId)
+                rej(err)               
+            }
         })
-
-        return promise1
     }
-
-    return timeLimited;
 };
 
 /**
