@@ -4,13 +4,18 @@
  * @return {Function}
  */
 var debounce = function(fn, t) {
-    let timeId
+    let isCalled=false
+    let timeId=null
     return function(...args) {
-        if(timeId!=null)
+        if(isCalled){
             clearTimeout(timeId)
+            isCalled=false
+        }
         timeId = setTimeout(()=>{
-            fn(... args)
-        }, t)
+            fn(...args)
+            isCalled=false
+        },t)
+        isCalled=true
     }
 };
 
