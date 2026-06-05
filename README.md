@@ -84,6 +84,7 @@
 | [0620-not-boring-movies](https://github.com/alwaysanshul/LEETCODE/tree/master/0620-not-boring-movies) |
 | [1045-customers-who-bought-all-products](https://github.com/alwaysanshul/LEETCODE/tree/master/1045-customers-who-bought-all-products) |
 | [1141-user-activity-for-the-past-30-days-i](https://github.com/alwaysanshul/LEETCODE/tree/master/1141-user-activity-for-the-past-30-days-i) |
+| [1148-article-views-i](https://github.com/alwaysanshul/LEETCODE/tree/master/1148-article-views-i) |
 | [1193-monthly-transactions-i](https://github.com/alwaysanshul/LEETCODE/tree/master/1193-monthly-transactions-i) |
 | [1280-students-and-examinations](https://github.com/alwaysanshul/LEETCODE/tree/master/1280-students-and-examinations) |
 | [1327-list-the-products-ordered-in-a-period](https://github.com/alwaysanshul/LEETCODE/tree/master/1327-list-the-products-ordered-in-a-period) |
