@@ -89,5 +89,6 @@
 | [1280-students-and-examinations](https://github.com/alwaysanshul/LEETCODE/tree/master/1280-students-and-examinations) |
 | [1327-list-the-products-ordered-in-a-period](https://github.com/alwaysanshul/LEETCODE/tree/master/1327-list-the-products-ordered-in-a-period) |
 | [1341-movie-rating](https://github.com/alwaysanshul/LEETCODE/tree/master/1341-movie-rating) |
+| [1683-invalid-tweets](https://github.com/alwaysanshul/LEETCODE/tree/master/1683-invalid-tweets) |
 | [1978-employees-whose-manager-left-the-company](https://github.com/alwaysanshul/LEETCODE/tree/master/1978-employees-whose-manager-left-the-company) |
 <!---LeetCode Topics End-->
