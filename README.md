@@ -93,6 +93,7 @@
 | [1341-movie-rating](https://github.com/alwaysanshul/LEETCODE/tree/master/1341-movie-rating) |
 | [1378-replace-employee-id-with-the-unique-identifier](https://github.com/alwaysanshul/LEETCODE/tree/master/1378-replace-employee-id-with-the-unique-identifier) |
 | [1581-customer-who-visited-but-did-not-make-any-transactions](https://github.com/alwaysanshul/LEETCODE/tree/master/1581-customer-who-visited-but-did-not-make-any-transactions) |
+| [1661-average-time-of-process-per-machine](https://github.com/alwaysanshul/LEETCODE/tree/master/1661-average-time-of-process-per-machine) |
 | [1683-invalid-tweets](https://github.com/alwaysanshul/LEETCODE/tree/master/1683-invalid-tweets) |
 | [1978-employees-whose-manager-left-the-company](https://github.com/alwaysanshul/LEETCODE/tree/master/1978-employees-whose-manager-left-the-company) |
 <!---LeetCode Topics End-->
