@@ -1,9 +1,19 @@
 # Write your MySQL query statement below
-SELECT
-    class
-FROM 
+select
+class
+from
+Courses
+where
+(student, class) 
+in 
+(
+    select
+    student, class
+    from
     Courses
-GROUP BY 
+    group by
     class
-HAVING
-    COUNT(*) >= 5
+    having
+    count(class) >= 5
+)
+
