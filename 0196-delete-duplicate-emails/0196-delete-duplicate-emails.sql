@@ -1,9 +1,5 @@
-/*
- Please write a DELETE statement and DO NOT write a SELECT statement.
- Write your PL/SQL query statement below
- */
-delete from person 
-where id not in (
-    select min(id) from person
-    group by email
-);
+delete a from
+Person a join Person b
+on a.email = b.email
+where
+a.id > b.id
